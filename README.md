@@ -45,7 +45,12 @@ sudo apt-get install p7zip-full
 ### Introduction 
 We took the first steps to move towards practical zero shot sketch based image retrieval systems (see the paper for more detail). 
 To this end, we have used [Quick Draw!](https://github.com/googlecreativelab/quickdraw-dataset) 
-to curate the sketches and for the images we would like to thank [Flickr API](https://www.flickr.com/services/api/) .
+to curate the sketches and for the images we would like to thanks [Flickr API](https://www.flickr.com/services/api/) for such an amazing API.
+
+The structure of this repo is as follows:
+1. Getting the data 
+2. How to train models 
+3. At last how to evaluate
 
 ### Installation
 * Clone this repository
