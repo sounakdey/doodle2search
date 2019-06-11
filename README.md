@@ -1,4 +1,4 @@
-# D2S
+# Doodle to Search: Practical Zero-Shot Sketch-based Image Retrieval
 
 [PyTorch](https://pytorch.org/) | [Arxiv](https://arxiv.org/abs/1904.03451)
 
