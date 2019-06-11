@@ -48,9 +48,10 @@ To this end, we have used [Quick Draw!](https://github.com/googlecreativelab/qui
 to curate the sketches and for the images we would like to thanks [Flickr API](https://www.flickr.com/services/api/) for such an amazing API.
 
 The structure of this repo is as follows:
-1. Getting the data 
-2. How to train models 
-3. At last how to evaluate
+1. Installation
+2. Getting the data 
+3. How to train models 
+4. At last how to test and evaluate
 
 ### Installation
 * Clone this repository
@@ -68,26 +69,22 @@ pip3 install -r requirements.txt
 ```bash
 bash download_datasets.sh
 ```
-* QuickDraw [sketches](http://datasets.cvc.uab.es/QuickDraw/QuickDraw_sketches_final.zip) [images](http://datasets.cvc.uab.es/QuickDraw/QuickDraw_images_final.zip)
+* QuickDraw-Extended [sketches](http://datasets.cvc.uab.es/QuickDraw/QuickDraw_sketches_final.zip) and [images](http://datasets.cvc.uab.es/QuickDraw/QuickDraw_images_final.zip)
+
+### Train
+Finally we are ready to train. Magical words are:
+```bash
+python3 src/train.py sketchy_extended --data_path <mention the data path of the dataset>
+```
+The first argument is the dataset name you can replace it with tuberlin_extend or quickdraw_extend.
+You can check the ``options.py`` for changing a lot of the options such dimension size, different models, hyperparameters, etc.
 
 ### Test
 ##### Sketchy
 ```bash
-python3 src/test.py --dataset Sketchy_extended --dim-out 64 --semantic-models hieremb-jcn word2vec-google-news
+python3 src/test.py sketchy_extend --data_path <mention the data path of the dataset> --load <path of the trained models>
 ```
-##### TU-Berlin
-```bash
-python3 src/test.py --dataset TU-Berlin --dim-out 64 --semantic-models hieremb-path word2vec-google-news
-```
-### Train
-##### Sketchy
-```bash
-python3 src/train.py --dataset Sketchy_extended --dim-out 64 --semantic-models word2vec-google-news --epochs 1000 --early-stop 200 --lr 0.0001
-```
-##### TU-Berlin
-```bash
-python3 src/train.py --dataset TU-Berlin --dim-out 64 --semantic-models word2vec-google-news --epochs 1000 --early-stop 200 --lr 0.0001
-```
+
 ### Citation
 ```
 @inproceedings{Dey2019Doodle,
