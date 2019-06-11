@@ -42,6 +42,10 @@ PyTorch implementation of our D2S model for zero-shot sketch-based image retriev
 sudo apt-get install p7zip-full
 ```
 ## Getting Started
+### Introduction 
+We took the first steps to move towards practical zero shot sketch based image retrieval systems (see the paper for more detail). 
+To this end, we have used [Quick Draw!](https://github.com/googlecreativelab/quickdraw-dataset) 
+to curate the sketches and for the images we would like to thank [Flickr API](https://www.flickr.com/services/api/) .
 
 ### Installation
 * Clone this repository
@@ -53,19 +57,14 @@ cd doodle2search
 ```bash
 pip3 install -r requirements.txt
 ```
-* Update [config.ini](https://github.com/AnjanDutta/sem-pcyc/blob/master/config.ini) (see example)
-```bash
-[<host>]
-path_dataset = <where all the datasets will be downloaded>
-path_aux = <where all the auxiliary folders and files will be saved>
-```
 ### Download datasets
 * Sketchy
 * TU-Berlin
-* QuickDraw
 ```bash
 bash download_datasets.sh
 ```
+* QuickDraw [sketches](http://datasets.cvc.uab.es/QuickDraw/QuickDraw_sketches_final.zip) [images](http://datasets.cvc.uab.es/QuickDraw/QuickDraw_images_final.zip)
+
 ### Test
 ##### Sketchy
 ```bash
@@ -93,7 +92,10 @@ booktitle = {Proceedings of the IEEE conference on computer vision and pattern r
 year = {2019}
 }
 ```
+## Conclusion
+Thank you and sorry for the bugs!
 
 ## Author
 * [Sounak Dey](http://www.cvc.uab.es/people/sdey/) ([@SounakDey](https://github.com/sounakdey))
 * [Pau Riba](http://www.cvc.uab.es/people/priba/) ([@PauRiba](https://github.com/priba))
+* [Anjan Dutta](https://sites.google.com/site/2adutta/home/) ([@AnjanDutta](https://github.com/AnjanDutta))
