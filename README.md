@@ -1,6 +1,6 @@
 # Doodle to Search: Practical Zero-Shot Sketch-based Image Retrieval
 
-[PyTorch](https://pytorch.org/) | [Arxiv](https://arxiv.org/abs/1904.03451)
+[PyTorch](https://pytorch.org/) | [Arxiv](https://arxiv.org/abs/1904.03451) | [Project](https://sounakdey.github.io/doodle2search.github.io/)
 
 <p align="center">
 <img src="./figures/architecture.png" width="800">
@@ -97,11 +97,12 @@ python3 src/test.py sketchy_extend --data_path <mention the data path of the dat
 
 ### Citation
 ```
-@inproceedings{Dey2019Doodle,
-author = {Sounak Dey, Pau Riba, Anjan Dutta, Josep LLados and Yi-Zhe Song},
-title = {Doodle to Search: Practical Zero-Shot Sketch-based Image Retrieval},
-booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition.},
-year = {2019}
+@InProceedings{Dey_2019_CVPR,
+    author = {Dey, Sounak and Riba, Pau and Dutta, Anjan and Llados, Josep and Song, Yi-Zhe},
+    title = {Doodle to Search: Practical Zero-Shot Sketch-Based Image Retrieval},
+    booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month = {June},
+    year = {2019}
 }
 ```
 ## Conclusion
