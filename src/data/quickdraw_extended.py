@@ -19,8 +19,7 @@ from data.data_utils import *
 
 def QuickDraw_Extended(args, transform='None'):
     # Getting the classes
-    # class_labels_file = os.path.join(args.data_path, 'quick_draw_125', 'class_labels.txt')
-    class_labels_file = os.path.join('/media/sounak/4tbdisk/Datasets', 'quick_draw_125', 'class_labels.txt')
+    class_labels_file = os.path.join(args.data_path, 'quick_draw_125', 'class_labels.txt')
     list_class = open(class_labels_file).read().splitlines()
     dicts_class = create_dict_texts(list_class)
 
